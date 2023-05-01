@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name='torch-scaler',
-    version='0.0.1',
-    description='An alternative to scikit-learn scaler for pytorch tensor',
+    version='0.0.2',
+    description='A scaler similar to the scikit-learn scaler that works on pytorch tensors',
     author='ihna-ceres',
     author_email='ihna@cerestechs.com',
     url='https://github.com/ihna-ceres/torch-scaler',

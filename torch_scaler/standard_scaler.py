@@ -53,3 +53,13 @@ class TorchStandardScaler:
         x *= (self.std + 1e-7)
         x += self.mean
         return x
+    
+    def cuda(self):
+        self.mean = self.mean.cuda()
+        self.std = self.std.cuda()
+        return self
+    
+    def cpu(self):
+        self.mean = self.mean.cpu()
+        self.std = self.std.cpu()
+        return self

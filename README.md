@@ -14,5 +14,6 @@ pip install torch-scaler
 
 - We support `fit(x: torch.tensor)`, `partial_fit(x: torch.tensor)`, `transform(x: torch.tensor)`, `inverse_transform(x: torch.tensor)` similar to sklearn.preprocessing.StandardScaler.
   - x has to have shape of (batch_size, feature_dim)
+- We also support `cuda()` and `cpu()` for torch.tensor compatibility.
 - Please refer to https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html
 - You can see how-to-use example in `test.py`
